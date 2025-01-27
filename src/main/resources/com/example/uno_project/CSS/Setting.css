@@ -1,0 +1,46 @@
+/* General Button Style */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #fb8500, #ff5400);
+    -fx-background-radius: 15;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.8);
+    -fx-border-width: 2;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 15, 0.3, 0, 4);
+}
+
+/* Hover Effect for Buttons */
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff7733, #ff3300);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 20, 0.5, 0, 4);
+}
+
+/* Toggle Button Style */
+.toggle-button {
+    -fx-background-color: linear-gradient(to bottom, #ffc107, #ffa000);
+    -fx-background-radius: 15;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.8);
+    -fx-border-width: 2;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 15, 0.3, 0, 4);
+}
+
+/* Hover Effect for Toggle Buttons */
+.toggle-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffcc33, #ff9900);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 20, 0.5, 1, 1);
+}
+
+/* Selected State for Toggle Buttons */
+.toggle-button:selected {
+    -fx-background-color: linear-gradient(to bottom, #ff5722, #e64a19);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 20, 0.5, 0, 4);
+}

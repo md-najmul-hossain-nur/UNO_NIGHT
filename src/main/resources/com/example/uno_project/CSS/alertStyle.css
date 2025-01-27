@@ -1,0 +1,37 @@
+.dialog-pane {
+    -fx-background-color: linear-gradient(to bottom, #ffcc00, #ff9900); /* Gradient background */
+    -fx-border-color: #ffa500;
+    -fx-border-width: 4px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.dialog-pane .content {
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+.dialog-pane .header-panel {
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-padding: 10;
+}
+
+.button-bar .button {
+    -fx-background-color: #ffffff; /* White button background */
+    -fx-text-fill: #ff6600; /* Orange button text */
+    -fx-font-weight: bold;
+    -fx-border-color: #ffa500;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+.button-bar .button:hover {
+    -fx-background-color: #ffa500; /* Orange background on hover */
+    -fx-text-fill: #ffffff; /* White text on hover */
+}

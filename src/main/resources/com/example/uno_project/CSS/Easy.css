@@ -1,0 +1,15 @@
+/* Highlight style for the active player's profile */
+.highlight {
+    -fx-effect: dropshadow(gaussian, yellow, 20, 0.7, 0, 0);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-opacity: 1;
+}
+
+/* Normal style for the inactive profile */
+.normal {
+    -fx-effect: none;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-opacity: 0.8;
+}
