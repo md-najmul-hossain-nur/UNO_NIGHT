@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="561.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.Uno">
+   <children>
+      <ImageView fitHeight="594.0" fitWidth="1003.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/uno%202d%20game%20background%20(2).jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="Rectangle2" arcHeight="5.0" arcWidth="5.0" fill="GOLD" height="21.0" layoutX="209.0" layoutY="511.0" stroke="BLACK" strokeType="INSIDE" width="585.0" />
+      <Rectangle fx:id="Rectangle1" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="21.0" layoutX="210.0" layoutY="511.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+      <Label fx:id="Labe1" layoutX="210.0" layoutY="474.0" prefHeight="30.0" prefWidth="257.0" text="Loading...">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label2" layoutX="729.0" layoutY="474.0" prefHeight="36.0" prefWidth="65.0" text="25%">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

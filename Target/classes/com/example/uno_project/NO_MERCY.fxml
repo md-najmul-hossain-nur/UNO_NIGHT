@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.NO_MERCY">
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="1037.0" layoutX="-9.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/hiii.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="profileView" fitHeight="60.0" fitWidth="60.0" layoutX="144.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/icon/Default_icon.jpg" />
+         </image>
+      </ImageView>
+      <HBox fx:id="playerCardsBox" layoutX="282.0" layoutY="469.0" prefHeight="91.0" prefWidth="406.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="70.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="91.0" fitWidth="70.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="150.0" layoutY="10.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="290.0" layoutY="10.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="220.0" layoutY="10.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="360.0" layoutY="10.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="185.0" layoutY="10.0" onMouseClicked="#handleCardClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </HBox>
+      <HBox fx:id="computerCardsBox" layoutX="300.0" layoutY="40.0" prefHeight="90.0" prefWidth="361.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="150.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="220.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="290.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="360.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="-20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="70.0" layoutX="120.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </HBox>
+      <ImageView fx:id="ComputerView" fitHeight="60.0" fitWidth="60.0" layoutX="755.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/icon/BOT_ICON.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Drawcard" layoutX="230.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleDrawCard" prefHeight="40.0" prefWidth="75.0" style="-fx-background-radius: 10; -fx-background-color: #3F858C;" text="Draw">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="Uno_player" layoutX="810.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleUnoCallPlayer" prefHeight="40.0" prefWidth="75.0" style="-fx-background-radius: 10; -fx-background-color: #3F858C;" text="UNO">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="Back" layoutX="910.0" layoutY="40.0" mnemonicParsing="false" onAction="#BackHandle" prefHeight="40.0" prefWidth="77.0" style="-fx-background-radius: 10; -fx-background-color: #3F858C;" text="BACK">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fx:id="drawPileImage" fitHeight="90.0" fitWidth="70.0" layoutX="230.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <StackPane fx:id="discardPileArea" layoutX="427.0" layoutY="227.0" prefHeight="130.0" prefWidth="149.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="discardPileImage" fitHeight="90.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+            <Circle fx:id="circleIndicator" fill="#5bb551c9" radius="78.0" stroke="WHITE" strokeWidth="10.0" visible="false" />
+         </children>
+      </StackPane>
+      <Label fx:id="profileNameLabel" alignment="CENTER" layoutX="124.0" layoutY="514.0" prefHeight="20.0" prefWidth="99.0" text="SHOW NAME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ComputerName" alignment="CENTER" layoutX="736.0" layoutY="120.0" prefHeight="20.0" prefWidth="99.0" text="Computer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

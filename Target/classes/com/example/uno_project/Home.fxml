@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.Home">
+   <children>
+      <ImageView fitHeight="568.0" fitWidth="997.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/uno%20card%20event%20%20(2).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="Setting" layoutX="828.0" layoutY="24.0" minWidth="53.0" mnemonicParsing="false" onAction="#goToSettings" prefHeight="40.0" prefWidth="140.0" text="SETTING" AnchorPane.bottomAnchor="497.0" AnchorPane.leftAnchor="828.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="24.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="Area" arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="30.0" layoutX="626.0" layoutY="28.0" stroke="#fb8500" strokeType="OUTSIDE" strokeWidth="2.0" width="158.0" AnchorPane.bottomAnchor="500.0" AnchorPane.leftAnchor="624.0" AnchorPane.rightAnchor="211.0" AnchorPane.topAnchor="24.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <HBox layoutX="587.0" layoutY="28.0" prefHeight="27.0" prefWidth="193.0" AnchorPane.bottomAnchor="507.0" AnchorPane.leftAnchor="587.0" AnchorPane.rightAnchor="217.0" AnchorPane.topAnchor="27.0">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/AVAILABLE_COIN.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets right="10.0" top="-5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="coinLabel" prefHeight="0.0" prefWidth="150.0" textFill="#fb8500">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="175.0" layoutY="256.0" prefHeight="155.0" prefWidth="600.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="222.0" AnchorPane.topAnchor="256.0">
+         <children>
+            <Button fx:id="computerButton" mnemonicParsing="false" onAction="#handleComputer" prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: faedcd;" text="GAME">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="localPlayerButton" mnemonicParsing="false" onAction="#handleLocalPlayer" prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: b5e48c;" text="LOCAL CHAT">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="14.0" layoutY="24.0" prefHeight="106.0" prefWidth="100.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="24.0">
+         <children>
+            <ImageView fx:id="profileView" fitHeight="70.0" fitWidth="80.0" onDragDetected="#initialize" onMouseClicked="#goToProfile" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/icon/Default_icon.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="profileNameLabel" alignment="CENTER" prefHeight="30.0" prefWidth="99.0" text="SHOW NAME" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox layoutX="409.0" layoutY="24.0" prefHeight="40.0" prefWidth="99.0" AnchorPane.bottomAnchor="495.0" AnchorPane.leftAnchor="422.0" AnchorPane.rightAnchor="467.0" AnchorPane.topAnchor="24.0">
+         <children>
+            <Button fx:id="BuyButton" minWidth="53.0" mnemonicParsing="false" onAction="#Shop" prefHeight="40.0" prefWidth="100.0" text="SHOP">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="840.0" layoutY="476.0" prefHeight="42.0" prefWidth="108.0" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="840.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="476.0">
+         <children>
+            <Button fx:id="ABOUT_US" mnemonicParsing="false" onAction="#gotoabouts" prefHeight="42.0" prefWidth="111.0" text="ABOUT US">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

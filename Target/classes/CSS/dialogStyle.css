@@ -1,0 +1,37 @@
+/* Dialog Pane Styling */
+.dialog-pane {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 2;
+    -fx-padding: 20;
+}
+
+/* Content Styling */
+.dialog-pane .content {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Button Styling */
+.dialog-pane .button {
+    -fx-font-size: 14px;
+    -fx-base: #4CAF50; /* Green button */
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.dialog-pane .button:hover {
+    -fx-base: #45a049; /* Darker green when hovered */
+}
+
+.dialog-pane .button:pressed {
+    -fx-base: #388e3c; /* Even darker green when clicked */
+}
+
+/* Customizing Button Layout */
+.dialog-pane .button-bar {
+    -fx-alignment: center;
+}

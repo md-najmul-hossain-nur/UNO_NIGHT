@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.Winpage">
+   <children>
+      <MediaView fx:id="Meida" fitHeight="567.0" fitWidth="997.0" />
+      <Button fx:id="PlayAgain" layoutX="70.0" layoutY="496.0" mnemonicParsing="false" onAction="#playagain" prefHeight="40.0" prefWidth="127.0" text="PLAY AGAIN" />
+      <Button fx:id="Back" alignment="CENTER" layoutX="830.0" layoutY="496.0" mnemonicParsing="false" onAction="#Backtohome" prefHeight="40.0" prefWidth="100.0" text="EXIT" />
+   </children>
+</Pane>

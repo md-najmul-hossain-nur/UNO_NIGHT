@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="561.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.GameMode">
+   <children>
+      <ImageView fitHeight="593.0" fitWidth="1043.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Local_player.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label fx:id="Game_Mode" alignment="CENTER" graphicTextGap="5.0" layoutX="347.0" layoutY="66.0" prefHeight="111.0" prefWidth="351.0" text="GAME MODE" textFill="WHITE">
+         <font>
+            <Font name="Trebuchet MS" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back" layoutX="68.0" layoutY="468.0" mnemonicParsing="false" onAction="#BackHandle" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 15; -fx-background-color: #026873;" text="BACK" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="882.0" AnchorPane.topAnchor="458.0">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <VBox layoutX="271.0" layoutY="205.0" prefHeight="205.0" prefWidth="501.0">
+         <children>
+            <HBox prefHeight="118.0" prefWidth="501.0">
+               <children>
+                  <Button fx:id="Demo" mnemonicParsing="false" onAction="#DemoHandle" prefHeight="90.0" prefWidth="250.0" style="-fx-background-radius: 20;" text="DEMO">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <HBox.margin>
+                        <Insets right="70.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="Easy" mnemonicParsing="false" onAction="#gotoComputerPlayer" prefHeight="90.0" prefWidth="250.0" style="-fx-background-radius: 20; -fx-background-color: e01e37;" text="EASY">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Hard" mnemonicParsing="false" onAction="#gotoHardMode" prefHeight="90.0" prefWidth="250.0" style="-fx-background-radius: 20; -fx-background-color: fb8500;" text="HARD">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <HBox.margin>
+                        <Insets right="70.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="No_mercy" mnemonicParsing="false" onAction="#gotoNo_mercy" prefHeight="90.0" prefWidth="250.0" style="-fx-background-radius: 20; -fx-background-color: GREEN];" text="HEADACHE" textFill="#575454">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
