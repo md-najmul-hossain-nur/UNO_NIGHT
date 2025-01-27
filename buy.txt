@@ -1,0 +1,9 @@
+Card1,1000
+Card2,5000
+Card3,7000
+Card4,10000
+Card5,20000
+Music1,25000
+Music2,3000
+Music3,10000
+

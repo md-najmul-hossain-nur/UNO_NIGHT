@@ -1,0 +1,3 @@
+NUR
+/Images/icon/Man_icon.jpeg
+true
