@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.Buy">
+   <children>
+      <ImageView fitHeight="568.0" fitWidth="1023.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/uno%202d%20game%20background%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="Area" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="553.0" layoutX="4.0" layoutY="5.0" stroke="#404040" strokeType="OUTSIDE" strokeWidth="5.0" width="991.0" />
+      <Rectangle fx:id="Area4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="162.0" layoutX="43.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="124.0" />
+      <Rectangle fx:id="Area5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="162.0" layoutX="814.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="130.0" />
+      <Rectangle fx:id="Area6" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="162.0" layoutX="432.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="118.0" />
+      <Rectangle fx:id="Area7" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="162.0" layoutX="621.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="130.0" />
+      <Rectangle fx:id="Area8" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="162.0" layoutX="231.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="130.0" />
+      <Rectangle fx:id="Area9" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="160.0" layoutX="431.0" layoutY="345.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="130.0" />
+      <Rectangle fx:id="Area10" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="160.0" layoutX="742.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="130.0" />
+      <Rectangle fx:id="Area11" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="160.0" layoutX="114.0" layoutY="345.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="130.0" />
+      <HBox fx:id="CardHbox" layoutX="20.0" layoutY="99.0" prefHeight="196.0" prefWidth="958.0">
+         <children>
+            <VBox fx:id="BuyCard1" prefHeight="190.0" prefWidth="170.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="120.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="BuyCard1Image" fitHeight="130.0" fitWidth="172.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/SHOP_CARD1.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow height="25.0" radius="18.25" width="50.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="buycard1coin" alignment="CENTER" prefHeight="24.0" prefWidth="153.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Coin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="Buycard1coin" prefHeight="18.0" prefWidth="45.0" style="-fx-border-style: Bold;" text="1000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="153.0">
+                     <children>
+                        <Button fx:id="CardBuy1" mnemonicParsing="false" onAction="#handleBuyCard1" text="BUY" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets right="-70.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ChooseCard1" layoutX="76.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleChooseCard1" prefHeight="25.0" prefWidth="120.0" text="CHOOSE" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Button>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" right="40.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="BuyCard2" layoutX="10.0" layoutY="10.0" prefHeight="190.0" prefWidth="170.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="120.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fx:id="BuyCard2Image" fitHeight="130.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/SHOP_CARD2.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow blurType="GAUSSIAN" height="25.0" radius="18.25" width="50.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color></DropShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="132.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Coin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="Buycard2coin" prefHeight="18.0" prefWidth="45.0" text="5000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect></Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="170.0">
+                     <children>
+                        <Button fx:id="CardBuy2" mnemonicParsing="false" onAction="#handleBuyCard2" text="BUY" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets right="-70.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ChooseCard2" layoutX="76.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleChooseCard2" prefHeight="25.0" prefWidth="120.0" text="CHOOSE" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="BuyCard3" layoutX="240.0" layoutY="10.0" prefHeight="190.0" prefWidth="170.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="120.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fx:id="BuyCard3Image" fitHeight="130.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/SHOP_CARD3.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow height="25.0" radius="18.25" spread="0.06" width="50.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color></DropShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Coin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="Buycard3coin" prefHeight="18.0" prefWidth="45.0" text="7000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="170.0">
+                     <children>
+                        <Button fx:id="CardBuy3" mnemonicParsing="false" onAction="#handleBuyCard3" style="-fx-background-color: e8c023; -fx-border-color: White;" text="BUY" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets right="-70.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ChooseCard3" layoutX="76.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleChooseCard3" prefHeight="25.0" prefWidth="120.0" text="CHOOSE" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="BuyCard4" layoutX="410.0" layoutY="10.0" prefHeight="190.0" prefWidth="170.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="120.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fx:id="BuyCard4Image" fitHeight="130.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/SHOP_CARD4.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow height="25.0" radius="18.25" width="50.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color></DropShadow>
+                           </effect>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Coin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="Buycard4coin" text="10000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="170.0">
+                     <children>
+                        <Button fx:id="CardBuy4" mnemonicParsing="false" onAction="#handleBuyCard4" text="BUY" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets right="-70.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ChooseCard4" layoutX="76.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleChooseCard4" prefHeight="25.0" prefWidth="120.0" text="CHOOSE" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="BuyCard5" layoutX="572.0" layoutY="10.0" prefHeight="190.0" prefWidth="170.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="120.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fx:id="BuyCard5Image" fitHeight="130.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/SHOP_CARD5.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow height="25.0" radius="18.25" width="50.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color></DropShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Coin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="Buycard5coin" prefHeight="18.0" prefWidth="45.0" text="20000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="170.0">
+                     <children>
+                        <Button fx:id="CardBuy5" mnemonicParsing="false" onAction="#handleBuyCard5" text="BUY" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets right="-70.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ChooseCard5" layoutX="76.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleChooseCard5" prefHeight="25.0" prefWidth="120.0" text="CHOOSE" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="30.0" layoutY="48.0" prefHeight="27.0" prefWidth="67.0" text="CARDS:" textFill="#fb8500">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="307.0" prefHeight="27.0" prefWidth="79.0" text="MUSIC : " textFill="#fb8500">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" graphicTextGap="5.0" layoutX="392.0" layoutY="26.0" prefHeight="34.0" prefWidth="220.0" text="MY SHOP" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="34.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <HBox fx:id="MusicHbox" layoutX="29.0" layoutY="337.0" prefHeight="217.0" prefWidth="946.0">
+         <children>
+            <VBox layoutX="40.0" layoutY="10.0" prefHeight="191.0" prefWidth="170.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="170.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="60.0" text="团团" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="115.0" prefWidth="141.0">
+                     <children>
+                        <ImageView fx:id="Music2" fitHeight="108.0" fitWidth="76.0" nodeOrientation="INHERIT" onDragDetected="#handleMusicHover" onMouseEntered="#handleMusicHover" onMouseExited="#handleMusicHover" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/squid_game-season_2song.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Coin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="Musiccoin2" prefHeight="18.0" prefWidth="45.0" text="3000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="170.0">
+                     <children>
+                        <Button fx:id="MusicBuy2" mnemonicParsing="false" onAction="#handleBuyMusic2" text="BUY" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets right="-70.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ChooseMusic2" layoutX="76.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="CHOOSE" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="70.0" right="70.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="191.0" prefWidth="170.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="170.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="60.0" text="ODD OUT" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="134.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="Music1" fitHeight="115.0" fitWidth="76.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Music/ShopMusic1.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Coin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="Musiccoin1" prefHeight="18.0" prefWidth="45.0" text="25000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="170.0">
+                     <children>
+                        <Button fx:id="MusicBuy1" mnemonicParsing="false" onAction="#handleBuyMusic1" text="BUY" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets right="-70.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ChooseMusic1" layoutX="76.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleChooseCard1" prefHeight="25.0" prefWidth="120.0" text="CHOOSE" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="80.0" right="70.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox layoutX="250.0" layoutY="10.0" prefHeight="191.0" prefWidth="170.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="170.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="85.0" text="RETRO" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="134.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="Music3" fitHeight="114.0" fitWidth="76.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Music/ShopMusic2.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="-10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="41.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Coin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="Musiccoin3" prefHeight="18.0" prefWidth="45.0" text="10000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="170.0">
+                     <children>
+                        <Button fx:id="MusicBuy3" mnemonicParsing="false" onAction="#handleBuyMusic3" text="BUY" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets right="-70.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ChooseMusic3" layoutX="76.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="CHOOSE" textAlignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="Back" layoutX="912.0" layoutY="23.0" mnemonicParsing="false" onAction="#Backhandle" style="-fx-border-style: Bold;" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="701.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/AVAILABLE_COIN.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="area" arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="29.0" layoutX="737.0" layoutY="30.0" stroke="#fb8500" strokeType="OUTSIDE" strokeWidth="2.0" width="153.0" />
+      <Label fx:id="coinLabel" layoutX="744.0" layoutY="30.0" prefHeight="30.0" prefWidth="146.0" textFill="#fb8500">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" layoutX="352.0" layoutY="59.0" stroke="WHITE" strokeType="INSIDE" width="300.0">
+         <effect>
+            <DropShadow />
+         </effect></Rectangle>
+   </children>
+</Pane>

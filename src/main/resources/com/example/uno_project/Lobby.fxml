@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="561.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.Lobby">
+   <children>
+      <!-- Background Image -->
+      <ImageView fitHeight="561.0" fitWidth="997.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Local_player.jpg" />
+         </image>
+      </ImageView>
+
+      <!-- Buttons -->
+      <Button fx:id="Back" layoutX="33.0" layoutY="504.0" mnemonicParsing="false" onAction="#BackHandle" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #196774;" text="BACK">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <VBox fx:id="EVENTS" layoutX="549.0" layoutY="94.0" prefHeight="229.0" prefWidth="424.0">
+         <children>
+            <HBox fx:id="Event1" prefHeight="143.0" prefWidth="383.0">
+               <children>
+                  <ImageView fx:id="event1" fitHeight="120.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/event1.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="event2" fitHeight="121.0" fitWidth="252.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/event4.jpeg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox fx:id="Event2" layoutX="10.0" layoutY="10.0" prefHeight="112.0" prefWidth="357.0">
+               <children>
+                  <ImageView fx:id="event3" fitHeight="101.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/event3.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="event4" fitHeight="98.0" fitWidth="176.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/event2.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TextArea fx:id="chatArea" layoutX="715.0" layoutY="377.0" prefHeight="114.0" prefWidth="258.0" promptText="Converstion" style="-fx-background-color: black; -fx-border-radius: 20;">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></TextArea>
+      <TextField fx:id="chatInput" layoutX="720.0" layoutY="512.0" prefHeight="25.0" prefWidth="149.0" promptText="Enter your Massege">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="send" layoutX="890.0" layoutY="510.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="38.0" prefWidth="80.0" style="-fx-background-radius: 10;" text="Send ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="COMMING" layoutX="618.0" layoutY="54.0" prefHeight="38.0" prefWidth="287.0" text="UP COMMING EVENT" textFill="#ff9500">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <VBox layoutX="8.0" layoutY="4.0" prefHeight="115.0" prefWidth="191.0">
+         <children>
+            <!-- Host Profile -->
+            <HBox prefHeight="115.0" prefWidth="372.0">
+               <children>
+                  <VBox prefHeight="115.0" prefWidth="110.0">
+                     <children>
+                        <ImageView fx:id="profileImageView" fitHeight="70.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="nameLabel" prefHeight="30.0" prefWidth="99.0" text="Name " textFill="#ebe9e9">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="14.0" layoutY="183.0" prefHeight="38.0" prefWidth="103.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Achivement" layoutX="26.0" layoutY="209.0" prefHeight="63.0" prefWidth="293.0" text="LATEST ACHIVEMENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <VBox fx:id="ACHU" layoutX="26.0" layoutY="257.0" prefHeight="247.0" prefWidth="469.0">
+         <children>
+            <Label fx:id="Achievment1" prefHeight="53.0" prefWidth="482.0" text="A PLAYER JUST WIN 5 TIMES !!!!!!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="Achievment2" prefHeight="53.0" prefWidth="476.0" text="KURUMA BEATS 4V4 FOR 10 TIMES !!! WHAT A ACHIVEMENTS......" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="Achievment3" prefHeight="51.0" prefWidth="475.0" text="NURUDDIN ARCHIVED UNO KING TITLE!!!! TRY YOUR LUCK NOW!!!!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="Achievment4" layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="479.0" text="JOYNAL IS NOW AN UNO MASTER!!!!!!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <Button fx:id="ActiveMember" layoutX="26.0" layoutY="158.0" mnemonicParsing="false" onMouseClicked="#handleActiveMemberClick" prefHeight="38.0" prefWidth="171.0" text="Member Active">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Rectangle fx:id="area" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" layoutX="325.0" layoutY="35.0" stroke="#ff851b" strokeType="OUTSIDE" strokeWidth="5.0" width="252.0" />
+      <HBox layoutX="242.0" layoutY="34.0" prefHeight="58.0" prefWidth="333.0">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/GUILD_PIC.jpg" />
+               </image>
+               <effect>
+                  <DropShadow radius="19.525" spread="0.11" width="59.1" />
+               </effect>
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" />
+               </HBox.margin>
+            </ImageView>
+      
+                        <!-- Lobby Title -->
+            <Label fx:id="GuildName" alignment="CENTER" onMouseClicked="#handleGuildNameClick" prefHeight="50.0" prefWidth="267.0" text="LIGHT SEEKER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</Pane>

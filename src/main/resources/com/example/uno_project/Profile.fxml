@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="561.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.Profile">
+   <children>
+      <ImageView fitHeight="582.0" fitWidth="1010.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/uno%20card%20event%20%20(2).jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="353.0" layoutX="23.0" layoutY="40.0" stroke="#dacccc" strokeType="OUTSIDE" strokeWidth="5.0" width="326.0" AnchorPane.bottomAnchor="164.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="643.0" AnchorPane.topAnchor="24.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6635071090047393" startX="0.5781990521327014" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.47333332896232605" blue="0.7099999785423279" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2823529541492462" green="0.7921568751335144" blue="0.8941176533699036" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Label layoutX="116.0" layoutY="54.0" prefHeight="30.0" prefWidth="140.0" text="PROFILE SETTING">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="255.0" layoutY="51.0" mnemonicParsing="false" onAction="#handleCloseButton" prefHeight="40.0" prefWidth="88.0" text="CLOSE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="nameInput" layoutX="140.0" layoutY="134.0" prefHeight="25.0" prefWidth="160.0" promptText="ENTER YOUR NAME" />
+      <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="34.0" prefWidth="80.0" text="SAVE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label alignment="CENTER" layoutX="105.0" layoutY="199.0" prefHeight="30.0" prefWidth="174.0" text="CHOSE PROFILE PICTURE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="84.0" fitWidth="88.0" layoutX="44.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="147.0" layoutY="94.0" prefHeight="31.0" prefWidth="140.0" text="SHOW NAME">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="profilePreview" fitHeight="70.0" fitWidth="80.0" layoutX="51.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <HBox layoutX="44.0" layoutY="250.0" prefHeight="55.0" prefWidth="280.0">
+         <children>
+            <ImageView fx:id="pic1Image" fitHeight="70.0" fitWidth="70.0" onMouseClicked="#selectProfilePicture" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/icon/Boy_icon.jpeg" />
+               </image>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow spread="0.47">
+                     <color>
+                        <Color red="0.5394737124443054" green="0.48952242732048035" blue="0.48952242732048035" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fx:id="pic2Image" fitHeight="70.0" fitWidth="70.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#selectProfilePicture" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/icon/GIrl_icon.jpeg" />
+               </image>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="pic3Image" fitHeight="70.0" fitWidth="70.0" layoutX="76.0" layoutY="10.0" onMouseClicked="#selectProfilePicture" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/icon/Man_icon.jpeg" />
+               </image>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="pic4Image" fitHeight="70.0" fitWidth="70.0" layoutX="142.0" layoutY="10.0" onMouseClicked="#selectProfilePicture" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/icon/Women_icon.jpeg" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </HBox>
+      <Button fx:id="editButton" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleEditButton" prefHeight="31.0" prefWidth="80.0" text="EDIT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Rectangle fx:id="Area" arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="30.0" layoutX="622.0" layoutY="26.0" stroke="#fb8500" strokeType="OUTSIDE" strokeWidth="2.0" width="158.0" AnchorPane.bottomAnchor="507.0" AnchorPane.leftAnchor="624.0" AnchorPane.rightAnchor="211.0" AnchorPane.topAnchor="24.0" />
+      <HBox layoutX="575.0" layoutY="260.0" prefHeight="155.0" prefWidth="200.0" AnchorPane.bottomAnchor="150.0" AnchorPane.topAnchor="255.0">
+         <children>
+            <Button fx:id="localPlayerButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: b5e48c;" text="LOCAL CHAT">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="427.0" layoutY="28.0" prefHeight="40.0" prefWidth="99.0" AnchorPane.bottomAnchor="491.0" AnchorPane.leftAnchor="427.0" AnchorPane.rightAnchor="462.0" AnchorPane.topAnchor="24.0">
+         <children>
+            <Button fx:id="buyButton1" minWidth="53.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="SHOP">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="588.0" layoutY="23.0" prefHeight="37.0" prefWidth="174.0" AnchorPane.bottomAnchor="507.0" AnchorPane.leftAnchor="587.0" AnchorPane.rightAnchor="217.0" AnchorPane.topAnchor="27.0">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/AVAILABLE_COIN.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="coinLabel" prefHeight="30.0" prefWidth="150.0" textFill="#fb8500" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="863.0" layoutY="26.0" prefHeight="40.0" prefWidth="133.0" AnchorPane.bottomAnchor="507.0" AnchorPane.leftAnchor="848.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="24.0">
+         <children>
+            <Button fx:id="settingButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="SETTING">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

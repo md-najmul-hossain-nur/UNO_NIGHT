@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.Rule">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="997.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/bg.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="178.0" layoutY="56.0" prefHeight="525.0" prefWidth="654.0">
+         <children>
+            <HBox prefHeight="71.0" prefWidth="786.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/RED%20UNO/uno_card_redskip.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="74.0" prefWidth="719.0" text="Block Card:  THIS CARD CAN BLOCK YOUR OPPONENT'S MOVE ONE TIME.">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="71.0" prefWidth="786.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/GREEN%20UNO/uno_card_greenreverse.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="74.0" prefWidth="719.0" text="REVERSE CARD: THIS CARD CAN CHANGE THE DIRECTION OF PLAY.">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="81.0" prefHeight="71.0" prefWidth="786.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/POWER%20CARD%20UNO/uno_card_wilddraw4.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="74.0" prefWidth="719.0" text="PLUS 4 CARD: THIS CARD CAN ADD FOUR CARD TO YOUR OPPONENT.">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="152.0" prefHeight="71.0" prefWidth="786.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/POWER%20CARD%20UNO/uno_card_wildchange.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="74.0" prefWidth="719.0" text="COLOR CHANGE: THIS CARD HAS THE ABILITY TO CHANGE COLORS DURING PLAY.">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="223.0" prefHeight="71.0" prefWidth="786.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/BLUE%20UNO/uno_card_bluedraw2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="74.0" prefWidth="719.0" text="PLUS 2 CARD: THIS CARD CAN ADD 2 CAD TO YOUR OPPONENT.">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="294.0" prefHeight="71.0" prefWidth="786.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Special%20Card/Zero.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="74.0" prefWidth="719.0" text="PIXI 0 CARD: A SPECIAL CARD THAT CAN RESHUFFLE THE ENTIRE DECK.">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="365.0" prefHeight="71.0" prefWidth="786.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Special%20Card/Swaphand.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" top="5.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="74.0" prefWidth="719.0" text="PIXI REVEARCE CARD: ANOTHER SPECIAL CARD, THAT CAN STEAL  ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="305.0" layoutY="21.0" prefHeight="42.0" prefWidth="333.0" text="GAME RULE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="OK" layoutX="826.0" layoutY="535.0" mnemonicParsing="false" onAction="#gotoGameMode" prefHeight="25.0" prefWidth="67.0" text="OK">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</Pane>

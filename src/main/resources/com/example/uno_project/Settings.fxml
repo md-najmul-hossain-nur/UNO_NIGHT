@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uno_project.Settings">
+   <ImageView fitHeight="573.0" fitWidth="1003.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-3.1875" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="0.0">
+      <image>
+         <Image url="@../../../Images/uno%20card%20event%20%20(2).jpg" />
+      </image>
+   </ImageView>
+   <Rectangle accessibleRole="BUTTON" arcHeight="5.0" arcWidth="5.0" height="170.0" layoutX="800.8" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="191.0" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="801.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="27.0">
+      <effect>
+         <DropShadow />
+      </effect>
+      <fill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.2558479607105255" green="0.7894737124443054" blue="0.7538986206054688" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.5655620694160461" green="0.8421052694320679" blue="0.5458089709281921" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+   </Rectangle>
+   <HBox layoutX="279.0" layoutY="245.0" prefHeight="164.0" prefWidth="403.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="222.0" AnchorPane.topAnchor="256.0">
+      <children>
+         <Button fx:id="computerButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: faedcd;" text="GAME">
+            <effect>
+               <DropShadow />
+            </effect>
+            <HBox.margin>
+               <Insets right="100.0" />
+            </HBox.margin>
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Button>
+         <Button fx:id="localPlayerButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 15; -fx-background-color: b5e48c;" text="LOCAL CHAT">
+            <effect>
+               <DropShadow />
+            </effect>
+            <HBox.margin>
+               <Insets left="100.0" />
+            </HBox.margin>
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <Rectangle fx:id="Area" arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="30.0" layoutX="624.0" layoutY="27.0" stroke="#fb8500" strokeType="OUTSIDE" strokeWidth="2.0" width="158.0" AnchorPane.bottomAnchor="503.0" AnchorPane.leftAnchor="624.0" AnchorPane.rightAnchor="211.0" AnchorPane.topAnchor="24.0">
+      <effect>
+         <DropShadow />
+      </effect></Rectangle>
+   <HBox layoutX="595.0" layoutY="28.0" prefHeight="27.0" prefWidth="200.0" AnchorPane.bottomAnchor="507.0" AnchorPane.leftAnchor="587.0" AnchorPane.rightAnchor="217.0" AnchorPane.topAnchor="27.0">
+      <children>
+         <ImageView fitHeight="34.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../Images/AVAILABLE_COIN.png" />
+            </image>
+            <HBox.margin>
+               <Insets right="10.0" top="-5.0" />
+            </HBox.margin>
+            <effect>
+               <DropShadow />
+            </effect>
+         </ImageView>
+         <Label fx:id="coinLabel" prefHeight="30.0" prefWidth="162.0" textFill="#fb8500">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+            <effect>
+               <DropShadow />
+            </effect>
+         </Label>
+      </children>
+   </HBox>
+   <VBox layoutX="26.0" layoutY="27.0" prefHeight="101.0" prefWidth="100.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="24.0">
+      <children>
+         <ImageView fx:id="profileView" fitHeight="70.0" fitWidth="80.0" onDragDetected="#initialize" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../Images/icon/Default_icon.jpg" />
+            </image>
+            <effect>
+               <DropShadow />
+            </effect>
+            <VBox.margin>
+               <Insets left="15.0" />
+            </VBox.margin>
+         </ImageView>
+         <Label fx:id="profileNameLabel" alignment="CENTER" prefHeight="30.0" prefWidth="99.0" text="SHOW NAME" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+      </children>
+   </VBox>
+   <VBox layoutX="801.0" layoutY="28.0" prefHeight="170.0" prefWidth="191.0">
+      <children>
+         <HBox prefHeight="53.0" prefWidth="191.0">
+            <children>
+               <Label alignment="CENTER" prefHeight="30.0" prefWidth="71.0" text="SETTINGS" textAlignment="CENTER" textOverrun="CLIP">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="20.0" right="10.0" top="8.0" />
+                  </HBox.margin>
+               </Label>
+               <Button fx:id="closeButton" mnemonicParsing="false" onAction="#handleCloseButton" prefHeight="38.0" prefWidth="78.0" style="-fx-background-radius: 10;" text="Close">
+                  <effect>
+                     <DropShadow />
+                  </effect>
+                  <HBox.margin>
+                     <Insets top="8.0" />
+                  </HBox.margin>
+               </Button>
+            </children>
+         </HBox>
+         <HBox prefHeight="42.0" prefWidth="183.0">
+            <children>
+               <Label prefHeight="30.0" prefWidth="45.0" text="Music">
+                  <font>
+                     <Font name="System Bold" size="16.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="10.0" right="56.0" />
+                  </HBox.margin>
+               </Label>
+               <ToggleButton fx:id="musicToggle" minWidth="30.0" mnemonicParsing="false" onAction="#toggleMusic" prefHeight="30.0" prefWidth="71.0" style="-fx-background-radius: 10;" text="ON">
+                  <effect>
+                     <DropShadow />
+                  </effect>
+               </ToggleButton>
+            </children>
+            <VBox.margin>
+               <Insets bottom="10.0" top="20.0" />
+            </VBox.margin>
+         </HBox>
+         <HBox prefHeight="29.0" prefWidth="178.0">
+            <children>
+               <Label prefHeight="25.0" prefWidth="63.0" text="Sound">
+                  <font>
+                     <Font name="System Bold" size="16.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="10.0" right="30.0" />
+                  </HBox.margin>
+               </Label>
+               <Slider fx:id="volumeSlider" max="100" min="0" prefHeight="14.0" prefWidth="109.0" style="-fx-background-color: REd;">
+                  <HBox.margin>
+                     <Insets left="-30.0" top="5.0" />
+                  </HBox.margin></Slider>
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+   <HBox layoutX="354.0" layoutY="36.0" prefHeight="42.0" prefWidth="99.0" AnchorPane.bottomAnchor="495.0" AnchorPane.leftAnchor="422.0" AnchorPane.rightAnchor="467.0" AnchorPane.topAnchor="24.0">
+      <children>
+         <Button fx:id="buyButton" minWidth="53.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="SHOP">
+            <effect>
+               <DropShadow />
+            </effect>
+         </Button>
+      </children>
+   </HBox>
+   <Button fx:id="ABOUT_US" layoutX="827.0" layoutY="475.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" text="ABOUT US" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="827.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="476.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+</AnchorPane>
